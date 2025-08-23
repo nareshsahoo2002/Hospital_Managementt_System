@@ -25,11 +25,14 @@
 			<div class="card-body">
 				<p class="fs-3 text-center">Patient Details</p>
 				<%
+				Doctor d = (Doctor) session.getAttribute("doctObj");
+				%>
+				<%
 						if (session.getAttribute("succMsg") != null) {
 						%>
 						<p class="text-center text-success fs-3"><%=session.getAttribute("succMsg")%></p>
 						<%
-						session.removeAttribute("succMsg");
+						session.removeAttribute("succMsg"); 
 						}
 						%>
 
@@ -61,9 +64,9 @@
 						<%
 						AppointmentDAO dao = new AppointmentDAO(DBConnect.getConn());
 						DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
-						List<Appointment> list = dao.getAllAppointment();
+						List<Appointment> list = dao.getAllAppointmentByDoctorLogin(d.getId());
 						for (Appointment ap : list) {
-							Doctor d = dao2.getDoctorById(ap.getDoctorId());
+							Doctor d1 = dao2.getDoctorById(ap.getDoctorId());
 						%>
 						<tr>
 							<th><%=ap.getFullName()%></th>

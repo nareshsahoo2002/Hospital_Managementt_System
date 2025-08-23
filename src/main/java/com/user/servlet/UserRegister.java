@@ -33,6 +33,8 @@ public class UserRegister extends HttpServlet {
 
 			boolean f = dao.register(u);
 
+			
+			
 			if (f) {
 
 				session.setAttribute("registration", "Register Sucessfully");
