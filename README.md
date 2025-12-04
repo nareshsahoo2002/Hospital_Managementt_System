@@ -136,21 +136,6 @@ Open browser:
 http://localhost:8080/Hospital_Managementt_System/
 ```
 
----
-
-## 🔐 Security (Important for Recruiters)
-
-* No hardcoded database credentials
-* Prepared Statements used to prevent SQL injection
-* Password hashing recommended (BCrypt)
-* Input validation implemented
-* Proper session management
-
----
-
-## 📸 Screenshots
-
-(Add your Login, Dashboard, Appointment screenshots here)
 
 ---
 
@@ -167,16 +152,10 @@ http://localhost:8080/Hospital_Managementt_System/
 ## 👨‍💻 Author
 
 **Naresh Sahoo**
+
 Java Full Stack Developer
+
 Passionate about building scalable and secure web applications
 
 ---
 
-If you want, I can also generate:
-
-✅ `schema.sql`
-✅ `.gitignore`
-✅ `.env.example`
-✅ Folder structure suggestions
-
-Just say **"Generate everything"**.
