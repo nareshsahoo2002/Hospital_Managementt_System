@@ -70,9 +70,13 @@ This project demonstrates strong full-stack skills using
 ## 🛠️ Tech Stack
 
 **Frontend:** HTML, CSS, Bootstrap
+
 **Backend:** Java, JSP, Servlets, JDBC
+
 **Architecture:** MVC
+
 **Database:** MySQL
+
 **Server:** Apache Tomcat
 
 ---
@@ -80,7 +84,9 @@ This project demonstrates strong full-stack skills using
 ## 📊 System Architecture (MVC)
 
 * **Model:** DAO classes, database logic
+
 * **View:** JSP pages
+
 * **Controller:** Servlets handling request/response
 
 ---
