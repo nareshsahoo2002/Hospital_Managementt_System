@@ -5,18 +5,24 @@ import java.sql.DriverManager;
 
 public class DBConnect {
 
-	private static Connection conn;
+    private static Connection conn;
 
-	public static Connection getConn() {
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_2","root","password");
+    public static Connection getConn() {
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-		return conn;
-	}
+            // Load credentials from system environment variables
+            String url  = System.getenv("DB_URL");
+            String user = System.getenv("DB_USER");
+            String pass = System.getenv("DB_PASS");
 
+            conn = DriverManager.getConnection(url, user, pass);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return conn;
+    }
 }
