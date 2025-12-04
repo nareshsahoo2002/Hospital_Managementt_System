@@ -1,172 +1,182 @@
-🚑 Hospital Management System
+
+
+# 🏥 Hospital Management System
 
 A scalable, secure, and efficient Hospital Management System designed to digitalize hospital operations, reduce paperwork, and improve the overall workflow for users, doctors, and administrators.
 
 This project demonstrates strong full-stack skills using
-Java • JSP • Servlets • HTML • CSS • Bootstrap • MySQL • MVC Architecture
+**Java • JSP • Servlets • HTML • CSS • Bootstrap • MySQL • MVC Architecture**
 
-🌟 Key Highlights
+---
 
-Fully functional multi-role system (User, Doctor, Admin)
+## 🌟 Key Highlights
 
-End-to-end appointment lifecycle
+* Fully functional multi-role system (User, Doctor, Admin)
+* End-to-end appointment lifecycle
+* Secure authentication system
+* Clean and modular project structure
+* Scalable database design
+* Strong backend using Java + JSP/Servlets
 
-Secure authentication system
+---
 
-Clean and modular project structure
+## 🧩 System Modules
 
-Scalable database design
+### 👤 User Module
 
-Strong backend using Java + JSP/Servlets
+* New users can register and log in
+* Book appointments with any doctor in any department
+* View:
 
-🏗️ System Modules
-👤 User Module
+  * Previous appointments
+  * Ongoing treatments
+  * Doctor feedback
+  * Appointment/treatment status
 
-New users can register and log in
+---
 
-Book appointments with any doctor in any department
+### 🩺 Doctor Module
 
-View:
+* Doctor logs in using credentials
+* Views all booked appointments
+* Provides treatment feedback
+* Updates treatment status
 
-Previous appointments
+---
 
-Ongoing treatments
+### 👑 Admin Module
 
-Doctor feedback
+* Admin logs in using admin credentials
+* Manage doctors:
 
-Appointment/treatment status
+  * Add doctor
+  * Remove doctor
+  * View doctor details
+* Manage users:
 
-🩺 Doctor Module
+  * View users
+  * Track treatment status
 
-Doctor logs in using credentials
+---
 
-Views all booked appointments
+### 📅 Appointment Module
 
-Provides feedback after treatment
+* Users can schedule appointments
+* Doctors receive and update appointments
+* Admin monitors appointment activity
 
-Updates treatment status
+---
 
-👑 Admin Module
+## 🛠️ Tech Stack
 
-Admin login
+**Frontend:** HTML, CSS, Bootstrap
+**Backend:** Java, JSP, Servlets, JDBC
+**Architecture:** MVC
+**Database:** MySQL
+**Server:** Apache Tomcat
 
-Manage doctors:
+---
 
-Add Doctor
+## 📊 System Architecture (MVC)
 
-Remove Doctor
+* **Model:** DAO classes, database logic
+* **View:** JSP pages
+* **Controller:** Servlets handling request/response
 
-View all Doctors
+---
 
-Manage users:
+## 🗄️ Database Setup
 
-View active users
+1. Create database:
 
-Track treatment progress
+   ```sql
+   CREATE DATABASE hospital;
+   ```
+2. Import the `schema.sql` file
+3. Configure database credentials using Environment Variables:
 
-📅 Appointment Module
-
-User can schedule an appointment
-
-Doctor receives and updates the appointment
-
-Admin monitors appointment activity
-
-🛠️ Tech Stack
-Frontend
-
-HTML, CSS, Bootstrap
-
-JSP Pages
-
-Backend
-
-Java
-
-Servlets
-
-MVC Architecture
-
-Database
-
-MySQL
-
-JDBC
-
-Server
-
-Apache Tomcat
-
-📊 System Architecture
-
-MVC Pattern
-
-Model: DAO classes, Database logic
-
-View: JSP pages
-
-Controller: Servlets handling request/response flow
-
-🗄️ Database Setup
-
-Create database:
-
-CREATE DATABASE hospital;
-
-
-Import schema.sql (include this file in your repo).
-
-Do NOT hardcode credentials.
-Use environment variables:
-
+```
 DB_URL=jdbc:mysql://localhost:3306/hospital
-DB_USER=your_username
+DB_USER=root
 DB_PASS=your_password
+```
 
-🚀 How to Run the Project
+❗ **Do NOT hardcode database credentials in Java code**
 
-Clone the repository
+---
 
+## 🚀 How to Run the Project
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/nareshsahoo2002/Hospital_Managementt_System.git
+```
 
+### 2️⃣ Import into IDE
 
-Import project
+* Open in IntelliJ / Eclipse
+* Import as *Maven project* (if applicable)
 
-Open in IntelliJ/Eclipse
+### 3️⃣ Setup MySQL Database
 
-Select as Maven Project (if applicable)
+* Create database
+* Import schema.sql
 
-Configure MySQL
+### 4️⃣ Configure Tomcat
 
-Create DB
+* Install Apache Tomcat (8.5+ recommended)
+* Add project to server
 
-Import schema.sql
+### 5️⃣ Run the Project
 
-Configure Tomcat
+Open browser:
 
-Add project to Tomcat
-
-Start the server
-
-Open in browser
-
+```
 http://localhost:8080/Hospital_Managementt_System/
+```
 
+---
 
-🧩 Future Enhancements
+## 🔐 Security (Important for Recruiters)
 
-Doctor availability scheduling
+* No hardcoded database credentials
+* Prepared Statements used to prevent SQL injection
+* Password hashing recommended (BCrypt)
+* Input validation implemented
+* Proper session management
 
-Email/SMS notifications
+---
 
-Patient medical history module
+## 📸 Screenshots
 
-Billing and invoice module
+(Add your Login, Dashboard, Appointment screenshots here)
 
-Dashboard analytics for admin
+---
 
-🧑‍💻 Author
+## 🚀 Future Enhancements
 
-Naresh Sahoo
-MCA | Java Full Stack Developer
-Passionate about building scalable and user-friendly applications.
+* Appointment reminders (Email/SMS)
+* Doctor scheduling system
+* Billing & invoice module
+* Medical history module
+* Admin analytics dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Naresh Sahoo**
+Java Full Stack Developer
+Passionate about building scalable and secure web applications
+
+---
+
+If you want, I can also generate:
+
+✅ `schema.sql`
+✅ `.gitignore`
+✅ `.env.example`
+✅ Folder structure suggestions
+
+Just say **"Generate everything"**.
